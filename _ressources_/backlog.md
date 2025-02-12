@@ -87,7 +87,42 @@
 
 ---
 
-## **🚀 Récapitulatif des priorités**
+### 🟢 **Épic 5 : Affichage des cryptos en polygones**
+
+#### **US10 - Affichage des cryptos sous forme de polygones dynamiques**
+📌 **Critères d’acceptation :**  
+- [ ] Affichage des cryptos sous **polygones hexagonaux/pentagonaux**  
+- [ ] **Dégradé dynamique** (Vert → Bleu si hausse, Rouge → Orange si baisse)  
+- [ ] **Clip-path CSS** pour gérer la forme des polygones  
+
+#### **US11 - Animation des polygones au survol**
+📌 **Critères d’acceptation :**  
+- [ ] Les polygones grandissent légèrement au survol (`scale(1.1)`).  
+- [ ] Effet de transition fluide avec CSS.  
+
+---
+
+### 🟠 **Épic 6 : Rafraîchissement automatique**
+
+#### **US12 - Rafraîchissement automatique des cryptos**
+📌 **Critères d’acceptation :**  
+- [ ] Une **barre de progression** affiche le temps avant le prochain rafraîchissement.  
+- [ ] Les **données des cryptos sont mises à jour toutes les 30 secondes**.
+
+---
+
+### 🟡 **Épic 7 : Taille dynamique des polygones**
+
+#### **US13 - Ajustement automatique de la taille des polygones**
+💡 **En tant qu’utilisateur**, je veux voir la taille des polygones varier en fonction du pourcentage de varaition des cryptos, pour mieux visualiser les tendances.
+📌 **Critères d’acceptation :**  
+- [ ] Les polygones sont plus grands si la crypto est en forte hausse 📈.  
+- [ ] Les polygones sont plus petits si la crypto est en forte baisse 📉.
+- [ ] La taille est exploitée dynamiquement avec scale() (min 0.8, max 1.5).
+
+
+### 🚀 **Récapitulatif des priorités**
+
 | **Priorité** | **User Story** | **Statut** |
 |-------------|---------------|------------|
 | 🔥 **Haute** | US01 - Liste des cryptos | À faire |
@@ -95,10 +130,13 @@
 | 🔥 **Haute** | US03 - Page de détails | À faire |
 | 🔥 **Haute** | US06 - Inscription & Connexion | À faire |
 | 🔥 **Haute** | US05 - Ajouter aux favoris | À faire |
+| 🔥 **Haute** | US10 - Affichage des cryptos en polygones | À faire |
+| 🔥 **Haute** | US13 - Taille dynamique des polygones | À faire |
 | ⚡ **Moyenne** | US04 - Ajouter un commentaire | À faire |
 | ⚡ **Moyenne** | US07 - Liste des favoris | À faire |
-| ⚡ **Moyenne** | US09 - Graphique d’évolution | À faire |
+| ⚡ **Moyenne** | US12 - Rafraîchissement automatique | À faire |
 | 🎨 **Basse** | US08 - Mode Dark/Light | À faire |
+| 🎨 **Basse** | US11 - Animation des polygones au survol | À faire |
 
 
 
