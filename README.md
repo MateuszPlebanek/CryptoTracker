@@ -6,14 +6,18 @@ CryptoTracker est une application web permettant de suivre les cours des cryptom
 ---
 
 ## 📦 Fonctionnalités
-✔ Affichage en temps réel des cryptomonnaies 📈 sous forme de polygones avec couleur graduante 🔷 vert si en hausse, rouge si en baisse
-✔ **Taille dynamique des polygones** : plus grand si hausse importante 📈, plus petit si baisse 📉  
-✔ Recherche et tri des cryptos 🔍  
-✔ Page de détails avec description et évolution du prix 📊  
-✔ Système d’authentification utilisateur 🔐  
-✔ Ajout de cryptos en favoris ⭐  
-✔ Ajout de commentaires sur chaque crypto 💬  
-✔ Barre de rafraîchissement automatique qui met à jour les cryptos toutes les 30 sec ⏳
+✔ Affichage des cryptos sous **forme de polygones dynamiques** 🔷
+✔ Chaque polygone affiche le **nom, prix, évolution** de la crypto 📊
+✔ Taille et couleur des polygones varient selon l'évolution de la crypto 🔺🔻
+✔ Survol et clic sur un polygone affichent plus d’infos 🖱️
+✔ Recherche et tri des cryptos 🔍
+✔ Page de détails avec description et évolution du prix 📊
+✔ Système d'authentification utilisateur 🔐
+✔ Ajout de cryptos en favoris ⭐
+✔ Ajout de commentaires sur chaque crypto 💬
+✔ Rafraîchissement automatique toutes les 30 secondes avec barre de progression 🔄
+✔ Mode Dark/Light 🌙☀️
+✔ Graphique d’évolution des prix 📈
 
 ---
 
@@ -43,4 +47,15 @@ cd ../backend && npm install
 cd frontend && npm run dev
 cd ../backend && node server.js
 ```
+
+## 📂 _ressources_
+Le dossier `_ressources_` contient :
+- **backlog.md** : Le backlog avec les User Stories et les Épics
+- **wireframe.png** : Les maquettes de l'application
+- **database.png** : Le modèle conceptuel de la base de données
+
+---
+
+## 📜 Auteur
+**Mateusz Plebanek**
 
