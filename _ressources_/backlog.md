@@ -2,23 +2,23 @@
 
 📅 **Durée** : 2 jours  
 👨‍💻 **Développeur** : Mateusz Plebanek  
-🎯 **Objectif** : Créer une application web permettant d’afficher les cours des cryptomonnaies sous **forme de polygones dynamiques**, de laisser des commentaires et de gérer des favoris avec un système d’authentification utilisateur.
+🎯 **Objectif** : Créer une application web permettant d’afficher les cours des cryptomonnaies sous **forme d’hexagones dynamiques**, de laisser des commentaires et de gérer des favoris avec un système d’authentification utilisateur.
 
 ---
 
-## 🟢 Épic 1 : Affichage des Cryptos en Polygones
-### **US01 - Affichage des cryptos sous forme de polygones**
-💡 **En tant qu’utilisateur**, je veux voir une représentation graphique des cryptomonnaies sous forme de polygones dynamiques, affichant leur nom, prix et évolution, afin de visualiser instantanément les tendances du marché.
+## 🟢 Épic 1 : Affichage des Cryptos en forme d’hexagones
+### **US01 - Affichage des cryptos sous forme de d’hexagones**
+💡 **En tant qu’utilisateur**, je veux voir une représentation graphique des cryptomonnaies sous forme d’hexagones dynamiques, affichant leur nom, prix et évolution, afin de visualiser instantanément les tendances du marché.
 📌 **Critères d’acceptation** :
-- [ ] Chaque cryptomonnaie est affichée dans **un polygone dynamique**
-- [ ] **Le polygone est plus grand** si la crypto est en forte hausse, et plus petit en cas de baisse
-- [ ] **Les couleurs des polygones changent** :
+- [ ] Chaque cryptomonnaie est affichée dans **un hexagone dynamique**
+- [ ] **L'hexagones est plus grand** si la crypto est en forte hausse, et plus petit en cas de baisse
+- [ ] **Les couleurs des hexagones changent** :
    - 🔴 **Rouge si la crypto est en baisse**
    - 🟢 **Vert si la crypto est en hausse**
 - [ ] Les données des cryptos sont récupérées depuis **l’API CoinGecko**
 - [ ] L’affichage est **responsive**
-- [ ] Un **survol d’un polygone** affiche des infos supplémentaires
-- [ ] Un **clic sur un polygone** ouvre une modale avec les détails de la crypto
+- [ ] Un **survol d’un hexagones** affiche des infos supplémentaires
+- [ ] Un **clic sur un hexagones** ouvre une modale avec les détails de la crypto
 
 ---
 
@@ -70,13 +70,13 @@
 
 ---
 
-## 🟡 Épic 5 : Polygones Dynamiques
-### **US10 - Taille dynamique des polygones**
+## 🟡 Épic 5 : Hexagones Dynamiques
+### **US10 - Taille dynamique des hexagones**
 💡 **En tant qu’utilisateur**, je veux que la taille des polygones varie en fonction des variations du marché afin d’avoir une visualisation intuitive.
 📌 **Critères d’acceptation** :
-- [ ] La taille du polygone est **proportionnelle à la variation** de la crypto
+- [ ] La taille de l'hexagone est **proportionnelle à la variation** de la crypto
 
-### **US11 - Animation des polygones au survol**
+### **US11 - Animation des hexagones au survol**
 💡 **En tant qu’utilisateur**, je veux que les polygones réagissent lorsque je passe la souris dessus pour améliorer l’interactivité.
 📌 **Critères d’acceptation** :
 - [ ] Un **survol change l’opacité ou la taille** du polygone
@@ -95,7 +95,7 @@
 ## 🚀 Récapitulatif des priorités
 | **Priorité** | **User Story** | **Statut** |
 |-------------|---------------|------------|
-| 🔥 **Haute** | US01 - Affichage des cryptos en polygones | À faire |
+| 🔥 **Haute** | US01 - Affichage des cryptos en forme d'hexagones | À faire |
 | 🔥 **Haute** | US06 - Inscription & Connexion | À faire |
 | 🔥 **Haute** | US05 - Ajouter aux favoris | À faire |
 | ⚡ **Moyenne** | US04 - Ajouter un commentaire | À faire |
@@ -103,8 +103,8 @@
 | ⚡ **Moyenne** | US12 - Rafraîchissement automatique | À faire |
 | 🎨 **Basse** | US08 - Mode Dark/Light | À faire |
 | 🎨 **Basse** | US09 - Graphique d’évolution | À faire |
-| 🎨 **Basse** | US10 - Taille dynamique des polygones | À faire |
-| 🎨 **Basse** | US11 - Animation des polygones au survol | À faire |
+| 🎨 **Basse** | US10 - Taille dynamique des hexagones | À faire |
+| 🎨 **Basse** | US11 - Animation des hexagones au survol | À faire |
 
 
 
