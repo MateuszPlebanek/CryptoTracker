@@ -6,10 +6,10 @@ CryptoTracker est une application web permettant de suivre les cours des cryptom
 ---
 
 ## 📦 Fonctionnalités
-✔ Affichage des cryptos sous **forme de polygones dynamiques** 🔷
-✔ Chaque polygone affiche le **nom, prix, évolution** de la crypto 📊
-✔ Taille et couleur des polygones varient selon l'évolution de la crypto 🔺🔻
-✔ Survol et clic sur un polygone affichent plus d’infos 🖱️
+✔ Affichage des cryptos sous **forme d'hexagones dynamiques** 🔷
+✔ Chaque hexagone affiche le **nom, prix, évolution** de la crypto 📊
+✔ Taille et couleur des hexagones varient selon l'évolution de la crypto 🔺🔻
+✔ Survol et clic sur un hexagone affichent plus d’infos 🖱️
 ✔ Recherche et tri des cryptos 🔍
 ✔ Page de détails avec description et évolution du prix 📊
 ✔ Système d'authentification utilisateur 🔐
