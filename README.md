@@ -35,7 +35,7 @@ CryptoTracker est une application web permettant de suivre les cours des cryptom
 
 ### 🔹 1️⃣ Cloner le repo
 ```bash
-git clone https://github.com/matpleb/CryptoTracker.git
+git clone https://github.com/MateuszPlebanek/CryptoTracker.git
 cd CryptoTracker
 
 ### 2️⃣ **Installation des dépendances**  
