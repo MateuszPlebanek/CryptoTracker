@@ -1,0 +1,62 @@
+.hexagon-custom {
+	position: relative;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	z-index: 1;
+	border: 3px solid transparent;
+}
+
+.hexagon-custom.green {
+	border-color: #00ff00;
+	box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+	background: radial-gradient(
+		circle,
+		rgba(0, 255, 0, 0.3) 0%,
+		rgba(0, 255, 0, 0.1) 50%,
+		black 100%
+	); /* Effet lumineux vert intérieur */
+}
+
+.hexagon-custom.red {
+	border-color: #ff0000;
+	background: radial-gradient(
+		circle,
+		rgba(255, 0, 0, 0.3) 0%,
+		rgba(255, 0, 0, 0.1) 50%,
+		black 100%
+	); /* Effet lumineux rouge intérieur */
+}
+
+.hexagon-custom:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.hexagon-content-custom {
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+
+.crypto-logo {
+	border-radius: 50%;
+	margin-bottom: 4px;
+}
+
+.crypto-symbol {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.crypto-change {
+	font-size: 12px;
+	font-weight: bold;
+}
