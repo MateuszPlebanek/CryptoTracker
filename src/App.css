@@ -11,3 +11,8 @@
 	background-color: #0d0d0d; /* Fond noir pour garder ton visuel */
 	overflow: hidden;
 }
+.login-page {
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+}
