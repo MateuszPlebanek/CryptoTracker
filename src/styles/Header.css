@@ -1,21 +1,147 @@
+/* Styles généraux du Header */
 .header {
 	background-color: #1e1e1e;
 	color: #ffffff;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 	padding: 0.8rem 1.5rem;
 	width: 100%;
+	position: relative;
+	z-index: 10;
 }
 
+/* Titre "CryptoTracker" */
 .site-title {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin: 0;
-	flex-grow: 1;
+	color: #ffffff;
 	text-align: left;
 }
 
+/* Conteneur central pour la barre de recherche sur desktop */
+.search-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	align-items: center;
+}
+.search-container-mobile {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: #1e1e1e;
+	padding: 0.5rem;
+	z-index: 20;
+}
+
+/* Barre de recherche */
+.search-bar .form-control {
+	background-color: #2c2c2c;
+	color: #ffffff;
+	border: 1px solid #555;
+	border-left: none;
+}
+
+.search-bar .form-control::placeholder {
+	color: #bbbbbb;
+}
+
+.search-bar .input-group-text {
+	background-color: #2c2c2c;
+	border: 1px solid #555;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-right: none;
+}
+
+.search-input-icon .search-icon {
+	font-size: 1.5rem;
+}
+
+/* Icône loupe bouton rond sur mobile */
+.search-icon-btn {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	background-color: #2c2c2c;
+	border: 1px solid #555;
+	color: #ffffff;
+	cursor: pointer;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.search-icon-btn:hover {
+	transform: scale(1.1);
+	background-color: #3a3a3a;
+}
+
+.search-icon-btn-inner {
+	font-size: 1.5rem;
+}
+
+.search-icon {
+	font-size: 1.2rem;
+}
+
+/* Groupe complet : focus sur toute la barre */
+.custom-search-group:focus-within {
+	outline: 2px solid #0d6efd; /* Bleu Bootstrap */
+	border-radius: 8px; /* Tu ajustes selon tes préférences */
+}
+
+/* Supprime les bords spécifiques si nécessaire */
+.search-bar .form-control:focus,
+.search-bar .input-group-text:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.search-results {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #2c2c2c;
+	border: 1px solid #555;
+	border-radius: 0 0 8px 8px;
+	max-height: 250px;
+	overflow-y: auto;
+	z-index: 10000;
+}
+.search-results .list-group-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: #ffffff;
+	background-color: #2c2c2c;
+	border-color: #444;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.search-results .list-group-item:hover {
+	background-color: #3a3a3a;
+}
+
+.crypto-icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+/* Avatar utilisateur */
 .user-avatar {
 	background-color: transparent;
 	border: none;
@@ -39,8 +165,22 @@
 	border-radius: 50%;
 }
 
-/* Responsive */
+/* Conteneur des icônes sur mobile */
+.icons-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
+	/* Sur mobile, le titre reste en haut et les icônes à droite */
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+		position: relative;
+	}
+
 	.site-title {
 		font-size: 1.2rem;
 	}
@@ -48,5 +188,19 @@
 	.avatar-img {
 		width: 35px;
 		height: 35px;
+	}
+
+	/* Cache la barre de recherche sur mobile */
+	.search-container {
+		display: none;
+	}
+
+	.search-icon-btn {
+		width: 45px;
+		height: 45px;
+	}
+
+	.search-icon-btn .search-icon {
+		font-size: 1.2rem;
 	}
 }
