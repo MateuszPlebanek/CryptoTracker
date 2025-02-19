@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Build
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# Environnements
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Système / OS
+.DS_Store
+Thumbs.db
+
+# IDE/Éditeurs
+.vscode/
+.idea/
+
+# Thunder Client (si tu utilises ça dans VS Code)
+thunder-tests/

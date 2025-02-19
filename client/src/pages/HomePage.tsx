@@ -1,6 +1,7 @@
 import type React from "react";
 import { useCallback, useEffect, useState } from "react";
 import HexagonCrypto from "../components/HexagonCrypto";
+import '../styles/HomePage.css';
 
 interface CryptoData {
 	id: string;
@@ -169,16 +170,8 @@ const HexagonBubblesContainer: React.FC = () => {
 	}, [bubbles, windowSize]);
 
 	return (
-		<div
-			style={{
-				position: "relative",
-				width: "100vw",
-				height: "100vh",
-				backgroundColor: "#0d0d0d",
-				overflow: "hidden",
-			}}
-		>
-			{bubbles.map((bubble) => (
+		<div className="homepage-container">
+				{bubbles.map((bubble) => (
 				<HexagonCrypto
 					key={bubble.id}
 					name={bubble.name}
