@@ -1,0 +1,13 @@
+.homepage-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0d0d0d;
+    overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    .homepage-container {
+      height: auto; /* Tu peux ajuster pour éviter d'avoir toute la hauteur sur mobile */
+      min-height: 100vh;
+    }
+  }
